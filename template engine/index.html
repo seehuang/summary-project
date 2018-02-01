@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>简易前端模板引擎</title>
+</head>
+<body>
+	<div id="tep"></div>
+	<script src="common.js"></script>
+	<script type="text/javascript">
+		(function(window){
+
+			var template = {
+				data:[13,17,88],
+				ulList:"<ul>{liPrice}</ul>",
+				liPrice:"<li>{listDetail}</li>"
+			}
+			/**
+			 * @Author   hc
+			 * @DateTime 2018-02-01
+			 * @Describe 渲染UL
+			 * @param    {[type]}   tep [description]
+			 * @return   {[type]}       [description]
+			 */
+			function renderUlList(tep){
+				let html = "";
+				html = My.Common.formatJs(tep,{
+					liPrice:renderliPrice(template.liPrice)
+				})
+				return html;
+			}
+			/**
+			 * @Author   hc
+			 * @DateTime 2018-02-01
+			 * @Describe 渲染LI
+			 * @param    {[type]}   tep [description]
+			 * @return   {[type]}       [description]
+			 */
+			function renderliPrice(tep){
+				let html = "";
+				for(let i=0 ;i<template.data.length;i++){
+					html += My.Common.formatJs(tep,{
+						listDetail:template.data[i]
+					})
+				}
+				return html;
+				
+			}
+
+			/**
+			 * @Author   hc
+			 * @DateTime 2018-02-01
+			 * @Describe 挂载最终的模板
+			 * @param    {[type]}   html [description]
+			 * @return   {[type]}        [description]
+			 */
+			document.querySelector("#tep").innerHTML =renderUlList(template.ulList);
+
+		})(window)
+	</script>
+</body>
+</html>

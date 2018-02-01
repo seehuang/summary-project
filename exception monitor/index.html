@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>前端异常监控上报</title>
+</head>
+<body>
+	<script src="monitor.js"></script>
+	<script type="text/javascript">
+		/**
+		 * @Author   hc
+		 * @DateTime 2018-01-31
+		 * @Describe 异常监控需要先引入monitor监控代码
+		 * @param    {[type]}   window [description]
+		 * @return   {[type]}          [description]
+		 */
+		(function(window){
+
+			/**
+			 * 声明一个全局对象My，作用于整个多页应用，后期应该配置在统一的config.js中
+			 * @type {Object}
+			 */
+			window.My = window.My || {};
+			
+			My = {
+				/**
+				 * @Author   hc
+				 * @DateTime 2018-01-31
+				 * @Describe 测试异常监控函数，故意写错for循环的代码
+				 * @return   {[type]}   [description]
+				 */
+				testMonitor:function(){
+					/**
+					 * 此处没有声明K，必然报错，看monitor如何处理。
+					 * @type {Number}
+					 */
+					for(let i = 0;i<K;i++){
+						console.log(i);
+					}
+				},
+				/**
+				 * @Author   hc
+				 * @DateTime 2018-01-31
+				 * @Describe	在页面打印错误堆栈
+				 * @param    {[type]}   err [description]
+				 * @return   {[type]}       [description]
+				 */
+				printErrorStack:function(err){
+					var html = ""
+					for(let i in err){
+						html +="<p>"+i+":"+err[i]+"</p>"
+					}
+					document.write(html);
+				}
+
+			}
+
+			My.testMonitor();
+		})(window)
+	</script>
+</body>
+</html>
