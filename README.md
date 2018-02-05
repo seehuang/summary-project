@@ -10,4 +10,4 @@
 
    [exception monitor](https://github.com/iiling/summary-project/tree/master/exception%20monitor)   前端异常处理上报代码
     
-   [template engine](https://github.com/iiling/summary-project/tree/master/template%20engine)   前端字符串替换代码，简易模板殷勤
+   [template engine](https://github.com/iiling/summary-project/tree/master/template%20engine)   前端字符串替换代码，简易的前端模板引擎
