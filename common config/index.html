@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>项目静态资源配置</title>
+	<script type="text/javascript">
+		document.write("<script src='config/config.js?rnd="+Math.random()+"'><\/script>");
+	</script>
+	<script type="text/javascript">
+		My.config.loadCss("base");
+		My.config.loadJs("index");
+	</script>
+</head>
+<body>
+	<div class="box"></div>
+</body>
+</html>
