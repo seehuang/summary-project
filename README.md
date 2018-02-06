@@ -3,11 +3,11 @@
 
 ## 代码索引
 
-   [common model](https://github.com/iiling/summary-project/tree/master/common%20model)   公共弹出层代码
+   [common model](https://github.com/iiling/summary-project/tree/master/common%20model)   公共弹出层组件
 
 
-   [container fixed](https://github.com/iiling/summary-project/tree/master/container%20fixed)   固定区域代码
+   [container fixed](https://github.com/iiling/summary-project/tree/master/container%20fixed)   固定区域组件
 
-   [exception monitor](https://github.com/iiling/summary-project/tree/master/exception%20monitor)   前端异常处理上报代码
+   [exception monitor](https://github.com/iiling/summary-project/tree/master/exception%20monitor)   前端异常处理上报组件
     
-   [template engine](https://github.com/iiling/summary-project/tree/master/template%20engine)   前端字符串替换代码，简易的前端模板引擎
+   [template engine](https://github.com/iiling/summary-project/tree/master/template%20engine)   前端字符串替换组件，简易的前端模板引擎
