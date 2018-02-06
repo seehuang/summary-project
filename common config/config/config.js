@@ -2,7 +2,8 @@
 * @Author: hc
 * @Date:   2018-02-05 11:04:26
 * @Last Modified by:   hc
-* @Last Modified time: 2018-02-05 11:29:48
+* @description 多页应用的静态资源加载的配置，主要是配置JS,CSS,Icon静态文件的自动加载，并在文件末尾添加版本号。
+* @Last Modified time: 2018-02-05 11:42:12
 */
 window.My = window.My || {};
 
