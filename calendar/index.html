@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <style type="text/css">
+            html,body{
+                text-align: center;
+            }
+            td{
+                border-top: 1px solid #ccc;
+                width: 40px;
+                height: 30px;
+            }
+            td:hover{
+                background-color: #ddd;
+            }
+            td:first-child{
+                color: red;
+            }
+            td:last-child{
+                color: red;
+            }
+            table{
+                margin: 0 auto;
+            }
+            #premon{
+                width:100px;
+                height:30px;
+                border-radius: 5px;
+                text-align: center;
+                color: #fff;
+                background-color: #5c9ef8;
+                display: inline-block;
+            }
+            #nextmon{
+                width:100px;
+                height:30px;
+                display: inline-block;
+                border-radius: 5px;
+                text-align: center;
+                color: #fff;
+                background-color: #5c9ef8;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="text">
+        <div>
+            <p id="tit"></p>
+            <table >
+                <thead><tr>
+                    <td>日</td>
+                    <td>一</td>
+                    <td>二</td>
+                    <td>三</td>
+                    <td>四</td>
+                    <td>五</td>
+                    <td>六</td>
+                </tr></thead>
+                
+                <tbody id="tableouth">
+                </tbody>
+            </table><br>
+        </div>
+        
+        <div id="premon">pre month</div>
+        <div id="nextmon">next month</div>
+        <script src="calendar.js"></script>
+    </body>
+</html>
