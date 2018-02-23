@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ZH-CN">
+<head>
+<meta charset="utf-8">
+<title>JS生成验证码</title>
+<style type="text/css">
+.code {
+    background-image: url(code.jpg);
+    font-family: Arial;
+    font-style: italic;
+    color: Red;
+    border: 0;
+    padding: 2px 3px;
+    letter-spacing: 3px;
+    font-weight: bolder;
+}
+.unchanged {
+    border: 0;
+}
+</style>
+
+</head>
+<body onload="My.Validate.createCode()">
+<form action="#">
+    <input type="text" id="input1" /> <input type="text" onclick="My.Validate.createCode()" readonly="readonly" id="checkCode" class="unchanged" style="width: 80px" /><br />
+    <input id="Button1" onclick="My.Validate.validate();" type="button" value="确定" />
+</form>
+<script src="validate.js"></script>
+</body>
+</html>
