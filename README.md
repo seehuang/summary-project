@@ -1,7 +1,7 @@
 ﻿# summary-project
 日常项目开发中总结的一些实用性组件，供后续项目使用 
  
-## 代码索引           
+## 代码索引            
 
    [common config](https://github.com/iiling/summary-project/tree/master/common%20config)   关于动态加载配置静态资源文件的方案
 
