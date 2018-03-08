@@ -17,7 +17,7 @@
 
    [calendar](https://github.com/iiling/summary-project/tree/master/calendar)简单实用的日历组件
 
-   [node servers](https://github.com/iiling/summary-project/tree/master/node%20server)简单实用node服务器搭建
+   [node servers](https://github.com/iiling/summary-project/tree/master/node%20servers)简单实用node服务器搭建
 
    [count down](https://github.com/iiling/summary-project/tree/master/count%20time)防止刷新页面的按钮倒计时
 
