@@ -3,7 +3,7 @@
 * @Date:   2018-02-05 08:50:15
 * @Last Modified by:   hc
 * @description 给定一个区块，当滚动条往下滚动时，区块位置固定。
-* @Last Modified time: 2018-02-05 09:37:54
+* @Last Modified time: 2018-03-28 15:02:29
 */
 
 (function(window,document,$){
@@ -44,11 +44,11 @@
 		 */
 		fixedSection:function(target){
 			var scrollTop = document.documentElement.scrollTop;
-            if(scrollTop > 115){
-            	target.setAttribute("style","position:fixed;top:0px");
-            }else{
-            	target.setAttribute("style","position:absolute;top:0px");
-            }
+			if(scrollTop > 115){
+				target.setAttribute("style","position:fixed;top:0px");
+			}else{
+				target.setAttribute("style","position:absolute;top:0px");
+			}
 		},
 		recycling:function(){
 
