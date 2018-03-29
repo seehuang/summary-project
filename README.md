@@ -23,7 +23,7 @@
 
    [count time](https://github.com/iiling/summary-project/tree/master/count%20time)  时间的倒计时
    
-   [common loading](https://github.com/iiling/summary-project/tree/master/common%20loading)  时间的倒计时
+   [common loading](https://github.com/iiling/summary-project/tree/master/common%20loading)  公共loading层组件
 
    
 
