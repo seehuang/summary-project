@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>公共模态层组件</title>
+	<style type="text/css">
+		body{
+			width: 100%;
+			overflow-x: hidden;
+		}
+		.my-model{
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			bottom: 0px;
+			right: 0px;
+			z-index: 100;
+		}
+		.mm-content{
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			left: 50%;
+			top: 50%;
+			margin-left: -50px;
+			margin-top: -50px;
+			border-radius: 5px;
+			z-index: 110;
+		}
+		.mm-content img{
+			width: 100%;
+			user-select:none;
+		}
+		.mm-transparent{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: #000;
+			opacity: .7;
+			z-index: 105;
+		}
+		.btn{
+			width: 30px;
+			height: 2300px;
+			background-color: darkgreen;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="btn"></div>
+	<div class="my-model">
+		<div class="mm-content"><img src="loading.gif"></div>
+		<div class="mm-transparent"></div>
+	</div>
+	<script src="jquery-1.9.1.js"></script>
+	<script src="loading.js"></script>
+</body>
+</html>
