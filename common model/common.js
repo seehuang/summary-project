@@ -56,7 +56,8 @@
 		 * @return   {[type]}   [description]
 		 */
 		showModel:function(){
-			var windowHeight = document.documentElement.scrollTop + document.documentElement.clientHeight/2;
+			var scrollTop =document.body.scrollTop||document.documentElement.scrollTop;
+			var windowHeight = scrollTop+ document.documentElement.clientHeight/2;
 			this.setDocument();
 			this.myModel.css({"height":document.documentElement.offsetHeight});
 			this.mmContent.css({"top":windowHeight})
