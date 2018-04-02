@@ -7,7 +7,7 @@
 
    [common config](https://github.com/iiling/summary-project/tree/master/common%20config)   关于动态加载配置静态资源文件的方案
 
-   [common loading](https://github.com/iiling/summary-project/tree/master/common%20config)   公共Loading组件
+   [common loading](https://github.com/iiling/summary-project/tree/master/common%20loading)   公共Loading组件
 
    [common model](https://github.com/iiling/summary-project/tree/master/common%20model)   公共弹出层组件
 
