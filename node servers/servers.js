@@ -12,7 +12,7 @@ fs   = require('fs'),
 os   = require('os');
 
 
-function getIPv4555(){
+function getIPv4(){
 
     var interfaces = os.networkInterfaces();//获取网络接口列表
     var ipv4s = [];//同一接口可能有不止一个IP4v地址，所以用数组存
